@@ -16,7 +16,7 @@ artyom.on([finalCom]).then(function(i){
 
     console.log("On");
     console.log(finalCom);
-    speak(finalCom);
+    //speak(finalCom);
 });
 
 artyom.initialize({
