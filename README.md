@@ -6,4 +6,7 @@
 
 ##
 
-![alt tag](https://raw.githubusercontent.com/danfragoso/chatbot/master/img/withlove.png)
+
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/danfragoso/chatbot/master/img/withlove.png" />
+</p>
