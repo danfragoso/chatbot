@@ -5,8 +5,9 @@
 
 var canvas;
 /*Chave e bot da cleverbotIO, gerei um bot pra mim mas ele tava meio burro :/ */
-var bot = new cleverbot("u8npzeT3iAfLFKhb", "lbuYWZUqfDy222khV7uxlFISiQz8gXMB");
-bot.setNick("homepage")
+//var bot = new cleverbot("u8npzeT3iAfLFKhb", "lbuYWZUqfDy222khV7uxlFISiQz8gXMB");
+var bot = new cleverbot('u9oWaJkNnostVcVA','NzsCn9PrdHh4q7VWQSQK2ojphvtq7ZxV');
+bot.setNick("Mia");
 
 artyom.on([finalCom]).then(function(i){
 
