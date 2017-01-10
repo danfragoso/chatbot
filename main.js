@@ -4,6 +4,7 @@
 */
 
 var canvas;
+var version = 0.2;
 var responseToogle = false;
 //novo bot :)
 //var bot = new cleverbot('u9oWaJkNnostVcVA','NzsCn9PrdHh4q7VWQSQK2ojphvtq7ZxV');
@@ -94,5 +95,11 @@ background(120);
 
   textSize(15);
   text("Danilo Fragoso 2017", width - 145, 20);
+
+  textSize(15);
+  text("artyom.js + cleverbotIO.js + p5.js", width / 2 - 110, height - 10);
+
+  textSize(15);
+  text("V " + version, width - 50, height -10);
 
 }
