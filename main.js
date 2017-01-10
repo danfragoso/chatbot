@@ -4,9 +4,13 @@
 */
 
 var canvas;
+var responseToogle = false;
 //novo bot :)
-var bot = new cleverbot('u9oWaJkNnostVcVA','NzsCn9PrdHh4q7VWQSQK2ojphvtq7ZxV');
-bot.setNick("Mia");
+//var bot = new cleverbot('u9oWaJkNnostVcVA','NzsCn9PrdHh4q7VWQSQK2ojphvtq7ZxV');
+var bot = new cleverbot("u8npzeT3iAfLFKhb", "lbuYWZUqfDy222khV7uxlFISiQz8gXMB");
+bot.setNick("homepage");
+//Voltei pra chave de api do site deles, pq a minha chave misteriosamente não responde a requisições longas.
+//bot.setNick("Mia");
 
 artyom.on([finalCom]).then(function(i){
 
@@ -23,7 +27,7 @@ artyom.initialize({
     listen:true,
 });
 
-var resp = "ops";
+var resp = "What is your name ?";
 
 function speak(text){
   artyom.say(text,{
@@ -32,6 +36,8 @@ function speak(text){
     },
     onEnd: function(){
         console.log("End");
+        artyom.clearGarbageCollection();
+        responseToogle = true;
     }
 });
 }
@@ -50,11 +56,28 @@ function windowResized(){
 
 function setup() {
 canvas = createCanvas(windowWidth, windowHeight);
+speak("Oh, hello. My name is Mia !");
+speak("Now tell me, what is your name ?");
+console.log("Greet");
+
 }
 
 function draw(){
-  background(150);
 
+var radius = random(250,275);
+background(120);
+
+  if (artyom.isSpeaking()){
+    noStroke();
+    fill(0,128,128);
+    ellipse(width / 2, height / 2, radius,radius);
+  }else{
+    noStroke();
+    fill(255,100,100);
+    ellipse(width / 2, height / 2, 250,250);
+  }
+
+  fill(255);
   textSize(15);
   text("you said:",10,10);
 
@@ -65,9 +88,11 @@ function draw(){
   text("she said:",10,60);
 
   textSize(32);
-  text(resp, 10, 85);
+  if (responseToogle){
+    text(resp, 10, 85);
+  }
 
   textSize(15);
-  text("Danilo Fragoso 2017", width - 150, height - 15);
+  text("Danilo Fragoso 2017", width - 145, 20);
 
 }

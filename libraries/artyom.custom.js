@@ -1,4 +1,4 @@
-var finalCom = "socorro";
+var finalCom = " ";
 /**
  * Tive que fazer umas gambiarras, desculpa Brasil.
  * Danilo Fragoso 01/2017

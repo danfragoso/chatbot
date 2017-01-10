@@ -20,7 +20,7 @@ const cleverbotIO = function (user, key) {
             if (typeof data != "object") {
                 data = JSON.parse(data);
             }
-            
+
             if (data.status == "success") {
                 this.nick = data.nick;
                 callback(false, this.nick);
