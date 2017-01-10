@@ -6,4 +6,4 @@
 
 ##
 
-![alt tag](https://raw.githubusercontent.com/danfragoso/chatbot/master/img/poweredby.png)
+![alt tag](https://raw.githubusercontent.com/danfragoso/chatbot/master/img/withlove.png)
